@@ -1,0 +1,9 @@
+Analysis parameters for DTIAtlasFiberAnalyzer : 
+Atlas Fiber Folder : /Volumes/MacintoshHD2/zhaoyi/DTI-template/syn-reg/3Dslicer/DTITK/fiberanalyzer/fiberanalyzer/cos
+#Selected Fibers in the Atlas--> give the name of the file without the path
+Selected Fibers : 012_genu.vtk,012_l-atr.vtk,012_l-cst.vtk,012_r-atr.vtk,012_r-cst.vtk,012_sple.vtk,013_genu.vtk,013_l-atr.vtk,013_l-cst.vtk,013_r-atr.vtk,013_r-cst.vtk,013_sple.vtk,034_genu.vtk,034_l-atr.vtk,034_l-cst.vtk,034_r-atr.vtk,034_r-cst.vtk,034_sple.vtk,049_genu.vtk,049_l-atr.vtk,049_l-cst.vtk,049_r-atr.vtk,049_r-cst.vtk,049_sple.vtk,051_genu.vtk,051_l-atr.vtk,051_l-cst.vtk,051_r-atr.vtk,051_r-cst.vtk,051_sple.vtk,052_genu.vtk,052_l-atr.vtk,052_l-cst.vtk,052_r-atr.vtk,052_r-cst.vtk,052_sple.vtk,056_genu.vtk,056_l-atr.vtk,056_l-cst.vtk,056_r-atr.vtk,056_r-cst.vtk,056_sple.vtk,057_genu.vtk,057_l-atr.vtk,057_l-cst.vtk,057_r-atr.vtk,057_r-cst.vtk,057_sple.vtk,059_genu.vtk,059_l-atr.vtk,059_l-cst.vtk,059_r-atr.vtk,059_r-cst.vtk,059_sple.vtk,079_genu.vtk,079_l-atr.vtk,079_l-cst.vtk,079_r-atr.vtk,079_r-cst.vtk,079_sple.vtk,dtitk_genu.vtk,dtitk_l-atr.vtk,dtitk_l-cst.vtk,dtitk_r-atr.vtk,dtitk_r-cst.vtk,dtitk_sple.vtk
+Selected Planes : 
+#Profile parameter --> choice between fa,md,fro,ad,l2,l3,ga,rd 
+Profile parameter : fa
+#What for col and row --> choice between 'Case' or 'Arc lenght' with after 'in row' or 'in column'/'in col'
+Col and Row : Case in row

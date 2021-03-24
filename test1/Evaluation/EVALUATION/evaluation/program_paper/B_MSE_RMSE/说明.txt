@@ -1,0 +1,29 @@
+genu      = Genu 
+splenium  = Splenium
+latr      = Left ATR
+ratr      = Right ATR
+lcst      = Left CST
+rcst      = Right CST
+lifo      = Left IFO
+rifo      = Right IFO
+
+gemse.m 计算Genu的MSE与RMSE
+
+gemse  = Genu MSE
+spmse  = Splenium MSE
+lamse  = Left ATR MSE
+ramse  = Right ATR MSE
+lcmse  = Left CST MSE
+rcmse  = Right CST MSE
+limse  = Left IFO MSE
+rimse  = Right IFO MSE
+
+affine  缩写 af
+dtitk   缩写 dt
+rigid   缩写 ri
+fsl     缩写 fs
+elastic 缩写 el
+syn     缩写 sy
+
+Genuaf.csv 表示 Affine配准算法的Genu部分的纤维特征数据
+

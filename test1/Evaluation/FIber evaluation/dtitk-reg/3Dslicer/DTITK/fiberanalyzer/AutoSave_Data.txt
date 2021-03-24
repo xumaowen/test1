@@ -1,0 +1,7 @@
+Data parameters for DTIAtlasFiberAnalyzer : 
+CSVFile : /Volumes/MacintoshHD2/zhaoyi/DTI-template/dtitk-reg/3Dslicer/ATLASBUIDER/fiberanalyzer/data.csv
+#Data/Case/Deformation Column --> index starts at 1
+Data Column : 2
+Field Type : h-field
+Case Column : 1
+Output Folder : /Volumes/MacintoshHD2/zhaoyi/DTI-template/dtitk-reg/3Dslicer/DTITK/fiberanalyzer

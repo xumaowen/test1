@@ -1,0 +1,9 @@
+Analysis parameters for DTIAtlasFiberAnalyzer : 
+Atlas Fiber Folder : /Volumes/MacintoshHD2/zhaoyi/DTI-template/dtitk-reg/3Dslicer/NTU
+#Selected Fibers in the Atlas--> give the name of the file without the path
+Selected Fibers : genu.vtk,l-atr.vtk,l-cst.vtk,r-atr.vtk,r-cst.vtk,sple.vtk
+Selected Planes : 
+#Profile parameter --> choice between fa,md,fro,ad,l2,l3,ga,rd 
+Profile parameter : fa
+#What for col and row --> choice between 'Case' or 'Arc lenght' with after 'in row' or 'in column'/'in col'
+Col and Row : Case in row

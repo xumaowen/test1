@@ -1,0 +1,40 @@
+clear all;
+clc;
+sub052Splenium=importdata('Splenium\affine052_Spleniume corpus callosum Fiber Bundle_fa__Clean.txt');
+sub052Splenium_tensor=sub052Splenium(30144:97345,:);
+sub083Splenium=importdata('Splenium\affine083_Spleniume corpus callosum Fiber Bundle_fa__Clean.txt');
+sub083Splenium_tensor=sub083Splenium(30144:97345,:);
+sub328Splenium=importdata('Splenium\affine328_Spleniume corpus callosum Fiber Bundle_fa__Clean.txt');
+sub328Splenium_tensor=sub328Splenium(30144:97345,:);
+sub329Splenium=importdata('Splenium\affine329_Spleniume corpus callosum Fiber Bundle_fa__Clean.txt');
+sub329Splenium_tensor=sub329Splenium(30144:97345,:);
+sub354Splenium=importdata('Splenium\affine354_Spleniume corpus callosum Fiber Bundle_fa__Clean.txt');
+sub354Splenium_tensor=sub354Splenium(30144:97345,:);
+sub383Splenium=importdata('Splenium\affine383_Spleniume corpus callosum Fiber Bundle_fa__Clean.txt');
+sub383Splenium_tensor=sub383Splenium(30144:97345,:);
+sub386Splenium=importdata('Splenium\affine386_Spleniume corpus callosum Fiber Bundle_fa__Clean.txt');
+sub386Splenium_tensor=sub386Splenium(30144:97345,:);
+sub396Splenium=importdata('Splenium\affine396_Spleniume corpus callosum Fiber Bundle_fa__Clean.txt');
+sub396Splenium_tensor=sub396Splenium(30144:97345,:);
+sub438Splenium=importdata('Splenium\affine438_Spleniume corpus callosum Fiber Bundle_fa__Clean.txt');
+sub438Splenium_tensor=sub438Splenium(30144:97345,:);
+sub439Splenium=importdata('Splenium\affine439_Spleniume corpus callosum Fiber Bundle_fa__Clean.txt');
+sub439Splenium_tensor=sub439Splenium(30144:97345,:);
+template=importdata('Splenium\template_Spleniume corpus callosum Fiber Bundle_fa__Clean.txt');
+template_tensor=template(30144:97345,:);
+mse052Splenium=mean((sub052Splenium_tensor(:)-template_tensor(:)).^2);
+mse083Splenium=mean((sub083Splenium_tensor(:)-template_tensor(:)).^2);
+mse328Splenium=mean((sub328Splenium_tensor(:)-template_tensor(:)).^2);
+mse329Splenium=mean((sub329Splenium_tensor(:)-template_tensor(:)).^2);
+mse354Splenium=mean((sub383Splenium_tensor(:)-template_tensor(:)).^2);
+mse383Splenium=mean((sub383Splenium_tensor(:)-template_tensor(:)).^2);
+mse386Splenium=mean((sub386Splenium_tensor(:)-template_tensor(:)).^2);
+mse396Splenium=mean((sub396Splenium_tensor(:)-template_tensor(:)).^2);
+mse438Splenium=mean((sub438Splenium_tensor(:)-template_tensor(:)).^2);
+mse439Splenium=mean((sub439Splenium_tensor(:)-template_tensor(:)).^2);
+MSEaSplenium=[mse052Splenium mse083Splenium mse328Splenium mse329Splenium mse354Splenium mse383Splenium mse386Splenium mse396Splenium mse438Splenium mse439Splenium];
+MSESplenium=(mse052Splenium+mse083Splenium+mse328Splenium+mse329Splenium+mse354Splenium+mse383Splenium+mse386Splenium+mse396Splenium+mse438Splenium+mse439Splenium)/10;
+RMSESplenium=(sqrt(mse052Splenium)+sqrt(mse083Splenium)+sqrt(mse328Splenium)+sqrt(mse329Splenium)+sqrt(mse354Splenium)+sqrt(mse383Splenium)+sqrt(mse386Splenium)+sqrt(mse396Splenium)+sqrt(mse438Splenium)+sqrt(mse439Splenium))/10;
+MSEaSplenium
+MSESplenium
+RMSESplenium

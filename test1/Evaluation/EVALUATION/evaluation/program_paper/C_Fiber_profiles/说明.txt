@@ -1,0 +1,26 @@
+genu      = Genu 
+splenium  = Splenium
+latr      = Left ATR
+ratr      = Right ATR
+lcst      = Left CST
+rcst      = Right CST
+lifo      = Left IFO
+rifo      = Right IFO
+
+corr.m  计算纤维束的均值、标准差以及模板与受试者纤维束相关系数（Table 5）
+
+corra.m 计算模板纤维束与受试者纤维束之间的相关系数（Table 6）
+
+Genu.m 绘制纤维特征曲线图
+
+Genu_legend.m 绘制带有图例的纤维特征曲线图
+
+affine  缩写 af
+dtitk   缩写 dt
+rigid   缩写 ri
+fsl     缩写 fs
+elastic 缩写 el
+syn     缩写 sy
+
+Genuaf.csv 表示 Affine配准算法的Genu部分的纤维特征数据
+

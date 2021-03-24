@@ -1,0 +1,40 @@
+clear all;
+clc;
+sub052Genu=importdata('Genu\affine052_genue corpus callosum Fiber Bundle_fa__Clean.txt');
+sub052Genu_tensor=sub052Genu(7977:25654,:);
+sub083Genu=importdata('Genu\affine083_genue corpus callosum Fiber Bundle_fa__Clean.txt');
+sub083Genu_tensor=sub083Genu(7977:25654,:);
+sub328Genu=importdata('Genu\affine328_genue corpus callosum Fiber Bundle_fa__Clean.txt');
+sub328Genu_tensor=sub328Genu(7977:25654,:);
+sub329Genu=importdata('Genu\affine329_genue corpus callosum Fiber Bundle_fa__Clean.txt');
+sub329Genu_tensor=sub329Genu(7977:25654,:);
+sub354Genu=importdata('Genu\affine354_genue corpus callosum Fiber Bundle_fa__Clean.txt');
+sub354Genu_tensor=sub354Genu(7977:25654,:);
+sub383Genu=importdata('Genu\affine383_genue corpus callosum Fiber Bundle_fa__Clean.txt');
+sub383Genu_tensor=sub383Genu(7977:25654,:);
+sub386Genu=importdata('Genu\affine386_genue corpus callosum Fiber Bundle_fa__Clean.txt');
+sub386Genu_tensor=sub386Genu(7977:25654,:);
+sub396Genu=importdata('Genu\affine396_genue corpus callosum Fiber Bundle_fa__Clean.txt');
+sub396Genu_tensor=sub396Genu(7977:25654,:);
+sub438Genu=importdata('Genu\affine438_genue corpus callosum Fiber Bundle_fa__Clean.txt');
+sub438Genu_tensor=sub438Genu(7977:25654,:);
+sub439Genu=importdata('Genu\affine439_genue corpus callosum Fiber Bundle_fa__Clean.txt');
+sub439Genu_tensor=sub439Genu(7977:25654,:);
+template=importdata('Genu\template_genue corpus callosum Fiber Bundle_fa__Clean.txt');
+template_tensor=template(7977:25654,:);
+mse052Genu=mean((sub052Genu_tensor(:)-template_tensor(:)).^2);
+mse083Genu=mean((sub083Genu_tensor(:)-template_tensor(:)).^2);
+mse328Genu=mean((sub328Genu_tensor(:)-template_tensor(:)).^2);
+mse329Genu=mean((sub329Genu_tensor(:)-template_tensor(:)).^2);
+mse354Genu=mean((sub383Genu_tensor(:)-template_tensor(:)).^2);
+mse383Genu=mean((sub383Genu_tensor(:)-template_tensor(:)).^2);
+mse386Genu=mean((sub386Genu_tensor(:)-template_tensor(:)).^2);
+mse396Genu=mean((sub396Genu_tensor(:)-template_tensor(:)).^2);
+mse438Genu=mean((sub438Genu_tensor(:)-template_tensor(:)).^2);
+mse439Genu=mean((sub439Genu_tensor(:)-template_tensor(:)).^2);
+MSEaGenu=[mse052Genu mse083Genu mse328Genu mse329Genu mse354Genu mse383Genu mse386Genu mse396Genu mse438Genu mse439Genu];
+MSEGenu=(mse052Genu+mse083Genu+mse328Genu+mse329Genu+mse354Genu+mse383Genu+mse386Genu+mse396Genu+mse438Genu+mse439Genu)/10;
+RMSEGenu=(sqrt(mse052Genu)+sqrt(mse083Genu)+sqrt(mse328Genu)+sqrt(mse329Genu)+sqrt(mse354Genu)+sqrt(mse383Genu)+sqrt(mse386Genu)+sqrt(mse396Genu)+sqrt(mse438Genu)+sqrt(mse439Genu))/10;
+MSEaGenu
+MSEGenu
+RMSEGenu
